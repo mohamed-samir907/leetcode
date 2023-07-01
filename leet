@@ -8,4 +8,6 @@ if [ $command == "build" ]; then
     go build -o leetcode
 elif [ $command == "run" ]; then
     ./leet build && ./leetcode
+elif [ $command == "test" ]; then
+    go test -v ./...
 fi
