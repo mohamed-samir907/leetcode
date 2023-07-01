@@ -1,0 +1,11 @@
+#!/bin/bash
+
+set -e
+
+command=$1
+
+if [ $command == "build" ]; then
+    go build -o leetcode
+elif [ $command == "run" ]; then
+    ./leet build && ./leetcode
+fi
